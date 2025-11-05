@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PT Amin Jaya Nusantara — Supplier Clay • Dolomit • Bentonit • Batu Kapur</title>
+  <meta name="description" content="PT Amin Jaya Nusantara — Supplier bahan mineral: clay, dolomit, bentonit, dan batu kapur. Produk berstandar, layanan ekspor & domestik." />
+  <style>
+    :root{--primary:#0b6b4f;--accent:#f0a500;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111}
+    header{background:linear-gradient(90deg,rgba(11,107,79,.95),rgba(5,65,45,.95));color:#fff;padding:28px 18px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .brand{font-weight:700;font-size:20px}
+    nav{margin-left:auto}
+    nav a{color:rgba(255,255,255,.95);text-decoration:none;margin-left:14px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:36px 18px}
+    .hero h1{font-size:30px;margin:0 0 8px}
+    .hero p{margin:0 0 16px;color:#eef6f2}
+    .cta{display:inline-block;background:var(--accent);color:#000;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    section{padding:28px 0;border-bottom:1px solid #eee}
+    .grid{display:grid;gap:18px}
+    .products{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(16,24,40,.06)}
+    h2{margin:0 0 12px}
+    ul{margin:0;padding-left:18px}
+    footer{padding:18px 0;text-align:center;color:var(--muted)}
+    /* responsive */
+    @media(min-width:900px){.hero{grid-template-columns:1fr 420px}.hero h1{font-size:40px}}
+    .contact-grid{display:grid;gap:12px;grid-template-columns:1fr;}
+    @media(min-width:700px){.contact-grid{grid-template-columns:1fr 320px}}
+    .product-img{height:140px;border-radius:8px;background:linear-gradient(135deg,#eef,#ffe);display:flex;align-items:center;justify-content:center;color:#444;font-weight:700}
+    .badge{display:inline-block;padding:6px 10px;background:rgba(11,107,79,.08);color:var(--primary);border-radius:999px;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="logo">
+        <div style="width:56px;height:56px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--primary);font-weight:800">AJ</div>
+        <div>
+          <div class="brand">PT Amin Jaya Nusantara</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.9)">Supplier Clay • Dolomit • Bentonit • Batu Kapur</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#products">Produk</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="badge">Supplier Mineral Indonesia</div>
+        <h1>PT Amin Jaya Nusantara — Penyedia Bahan Mineral Berkualitas</h1>
+        <p>Kami menyediakan clay, dolomit, bentonit, dan batu kapur untuk industri manufaktur, konstruksi, pupuk, dan ekspor. Pengiriman nasional & internasional, QC ketat, dan harga kompetitif.</p>
+        <a class="cta" href="#contact">Hubungi Kami</a>
+      </div>
+      <div class="card">
+        <h2>Permintaan Penawaran</h2>
+        <form id="rfq" onsubmit="handleSubmit(event)">
+          <label style="display:block;margin-bottom:8px">Nama Perusahaan<input required name="company" placeholder="Nama perusahaan" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd"></label>
+          <label style="display:block;margin-bottom:8px">Produk<input required name="product" placeholder="Contoh: Bentonit - 10 ton" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd"></label>
+          <label style="display:block;margin-bottom:8px">Email<input required type="email" name="email" placeholder="email@contoh.com" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd"></label>
+          <button type="submit" style="width:100%;padding:10px;margin-top:8px;border-radius:8px;border:0;background:var(--primary);color:#fff;font-weight:700">Kirim Permintaan</button>
+        </form>
+        <p style="font-size:12px;color:#666;margin-top:10px">* Form ini akan membuka email Anda (mailto) — sesuaikan atau hubungi lewat kontak di bawah.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="grid">
+        <div class="card">
+          <h2>Tentang Kami</h2>
+          <p>PT Amin Jaya Nusantara berdiri untuk memenuhi kebutuhan bahan baku mineral di pasar domestik dan internasional. Kami fokus pada kualitas, rantai pasok terpercaya, dan kepuasan pelanggan.</p>
+          <ul>
+            <li>Kontrol kualitas & pengujian laboratorium</li>
+            <li>Pengiriman bulk dan paket</li>
+            <li>Dokumen ekspor & sertifikasi</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Visi & Misi</h2>
+          <p><strong>Visi:</strong> Menjadi pemasok mineral terdepan di Nusantara.</p>
+          <p><strong>Misi:</strong> Menyediakan produk berkualitas, berkelanjutan, dan layanan profesional untuk klien industri.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2>Produk Unggulan</h2>
+      <div class="grid products">
+        <div class="card">
+          <div class="product-img">CLAY</div>
+          <h3>Clay (Lump)</h3>
+          <p>Clay berkualitas untuk industri bata, keramik, dan filler.</p>
+          <ul>
+            <li>Grade: Industrial</li>
+            <li>Pengemasan: Bulk / Bag</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="product-img">DOLOMIT</div>
+          <h3>Dolomit</h3>
+          <p>Dolomit untuk aplikasi pembuatan kapur, pakan ternak, dan industri kimia.</p>
+          <ul>
+            <li>CaMg(CO₃)₂</li>
+            <li>Ukuran: sesuai permintaan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="product-img">BENTONIT</div>
+          <h3>Bentonit</h3>
+          <p>Bentonit untuk pengeboran, pengepresan, dan aplikasi industri lainnya.</p>
+          <ul>
+            <li>Jenis: Na-bentonit / Ca-bentonit</li>
+            <li>Jaminan keaktifan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="product-img">BATU KAPUR</div>
+          <h3>Batu Kapur</h3>
+          <p>Batu kapur untuk industri semen, agregat jalan, dan pupuk.</p>
+          <ul>
+            <li>Grade: Lime stone</li>
+            <li>Pengiriman: Kapal, Truk</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="grid">
+        <div class="card">
+          <h2>Layanan</h2>
+          <ul>
+            <li>Penjualan domestik & ekspor</li>
+            <li>Pengemasan & logistik</li>
+            <li>Custom specification & lab testing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Sertifikasi & QC</h2>
+          <p>Kami bekerja sama dengan laboratorium independen untuk memastikan setiap batch memenuhi spesifikasi yang disepakati.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Office</h3>
+          <p>PT Amin Jaya Nusantara<br>Jl. Sayyid Jalal No.55 Leran, Manyar, Gresik</p>
+          <p>Email: <a href="mailto:aminjayanusantara@gmail.com">aminjayanusantara@gmail.com</a><br>Tel: +6281351155414</p>
+          <p>Jam operasional: Senin - Jumat, 08:00 - 17:00</p>
+          <div style="margin-top:12px">
+            <strong>Media Sosial</strong>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Lokasi</h3>
+          <!-- Insert an embeddable static map or iframe from Google Maps if hosting allows -->
+          <div style="width:100%;height:220px;background:#f3f4f6;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#777">Peta Lokasi (Embed Google Maps di sini)</div>
+          <p style="font-size:12px;color:#666;margin-top:8px">Untuk menampilkan peta: gunakan iframe Google Maps embed ketika Anda meng-hosting file atau gunakan fungsi "Embed" di Google Sites.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> PT Amin Jaya Nusantara — Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const company = encodeURIComponent(form.company.value||'');
+      const product = encodeURIComponent(form.product.value||'');
+      const email = encodeURIComponent(form.email.value||'');
+      const subject = encodeURIComponent('Permintaan Penawaran — '+company);
+      const body = encodeURIComponent('Perusahaan: '+decodeURIComponent(company)+'%0D%0AProduk: '+decodeURIComponent(product)+'%0D%0AEmail: '+decodeURIComponent(email)+'%0D%0A%0D%0AHarap beri penawaran dan detail pengiriman.');
+      window.location.href = `mailto:aminjayanusantara@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
+<!--
+README.md (untuk GitHub Pages)
+=================================
+
+# PT Amin Jaya Nusantara Website
+Website resmi PT Amin Jaya Nusantara — Supplier Clay, Dolomit, Bentonit, Batu Kapur.
+
+## 📦 Struktur Repo
+```
+/
+├── index.html   # File website
+└── README.md    # Dokumentasi
+```
+
+## 🚀 Deploy ke GitHub Pages
+
+1. Login ke GitHub
+2. Klik **New Repository**
+3. Nama repo: `amin-jaya-nusantara` (atau sesuai keinginan)
+4. **Public** → Create repository
+5. Upload file `index.html`
+6. Buat file `README.md` (isi seperti dokumentasi ini)
+7. Buka **Settings → Pages**
+8. Di bagian *Build and deployment*
+   - Source: **Deploy from branch**
+   - Branch: `main` → `/ (root)`
+9. Klik **Save**
+10. Tunggu ±1 menit → website akan tersedia di URL:
+```
+https://USERNAME.github.io/REPO-NAME
+```
+Contoh:
+```
+https://fatwaaminunhuda.github.io/amin-jaya-nusantara
+```
+
+## 🧩 Embed di Google Sites
+1. Buka https://sites.google.com
+2. Buat site baru
+3. Pilih **Insert → Embed**
+4. Paste URL GitHub Pages
+
+Website Anda siap tampil di Google Sites 🎉
+
+## ✉️ Kontak
+Email: info@aminjaya.co.id
+-->
+
